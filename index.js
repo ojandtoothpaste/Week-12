@@ -19,7 +19,6 @@ class Room {
 class HouseService {
     static url = 'https://ancient-taiga-31359.herokuapp.com/api/houses';
 
-//ANCHOR - CRUD Operations
     static getAllHouses() {
         return $.get(this.url);
     }
@@ -46,7 +45,7 @@ class HouseService {
         });
     }
 }
-//ANCHOR - class that helps manage the DOM, includes adding, deleting editing
+//ANCHOR - class that helps manage the DOM, includes adding, deleting editing (CRUD ops)
 class DOMManager {
     static houses;
 
